@@ -16,15 +16,15 @@
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header">
-	<img src="img/header_ai.svg" width="100%" height="200px" alt="" class="aligncenter " />	
-		
+	<img src="img/header_ai.svg" width="100%" height="200px" alt="" class="aligncenter " />
+
 	</div>
 	<!-- end #header -->
 	<div id="menu">
-		
+
     <ul>
 			<li><a href="index.html">Sagitta</a></li>
-			<li><a href="programovani.html">Začni s programováním</a></li>        
+			<li><a href="programovani.html">Začni s programováním</a></li>
 			<li class="current_page_item"><a href="ai.html">Poznej, co je umělá inteligence</a></li>
 			<li><a href="aktivity.html">Vyzkoušej další aktivity</a></li>
 			<li><a href="kontakt.html">Kontaktuj nás</a></li>
@@ -37,7 +37,7 @@
 			<div id="page-bgbtm">
 				<div id="content">
 					<div class="post">
-					
+
 <h1 id="ai">Umělá inteligence</h1>
 
 <p><i>Umělá inteligence je věda o vytváření strojů nebo systémů, které budou při řešení určitého úkolu užívat takového postupu, který – kdyby ho dělal člověk – bychom považovali za projev jeho inteligence<i><p>
@@ -57,7 +57,7 @@ Plánování a rozvrhování (Planning and scheduling)
 </li><li>
 Strojové učení (Machine learning)
 </li><li>
-A mnoho dalšího. 
+A mnoho dalšího.
 </li>
 </ul>
 
@@ -68,10 +68,10 @@ A mnoho dalšího.
 
 
 
-<p>Pro popis prostředí používáme tyto termíny: 
+<p>Pro popis prostředí používáme tyto termíny:
 <ul>
-<li>plně/částěčně pozorovatelné</li> 
-<li>deterministické/stochastické</li> 
+<li>plně/částěčně pozorovatelné</li>
+<li>deterministické/stochastické</li>
 <li>diskrétní/spojité</li>
 <li>sigle/multi agentní</li>
 </ul></p>
@@ -82,65 +82,65 @@ A mnoho dalšího.
 
 
 
-<p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.  
+<p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.
 
 <br><br>
 
 <div id="block">
 <p><b>Rozhodněte, jaké vlastnosti má prostředí v těchto situacích:</b></p>
 
-<button id="chess">Šachy</button> <button id="pacman">Pacman</button> <button id="poker">Poker</button> <button id="rock_paper_scissors">Kámen-nůžky-papír</button>
+<button id="chess" onclick="clicked(0)">Šachy</button> <button id="nezlob" onclick="clicked(1)">Člověče, nezlob se!</button> <button id="robot" onclick="clicked(2)">Robot v bludišti</button>
 <br><br><br>
 
 <label class="container">
 <input type="radio" id="fullyobservable" name="observable" value="fullyobservable">
 Plně pozorovatelné
-<span class="checkmark"></span> 
+<span class="checkmark"></span>
 </label><br>
 
 <label class="container">
 <input type="radio" id="partiallyobservable" name="observable" value="partiallyobservable">
 Částečně pozorovatelné
-<span class="checkmark"></span> 
+<span class="checkmark"></span>
 </label>
 <br>
 <br>
 
 <label class="container">
-<input type="radio" id="fullyobservable" name="deter_stoch" value="deterministic">
+<input type="radio" id="deterministic" name="deter_stoch" value="deterministic">
 Deterministické
-<span class="checkmark"></span> 
+<span class="checkmark"></span>
 </label><br>
 <label class="container">
-<input type="radio" id="partiallyobservable" name="deter_stoch" value="stochastic">
+<input type="radio" id="stochastic" name="deter_stoch" value="stochastic">
 Stochastické
-<span class="checkmark"></span> 
+<span class="checkmark"></span>
 </label> <br><br>
 
 <label class="container">
-<input type="radio" id="fullyobservable" name="disc_cont" value="discrete">
+<input type="radio" id="discrete" name="disc_cont" value="discrete">
 Diskrétní
 <span class="checkmark"></span>
 </label><br>
 <label class="container">
-<input type="radio" id="partiallyobservable" name="disc_cont" value="continuous">
+<input type="radio" id="continuous" name="disc_cont" value="continuous">
 Spojité
 <span class="checkmark"></span>
 </label> <br><br>
 
 <label class="container">
-<input type="radio" id="fullyobservable" name="multi_single" value="multiagent">
+<input type="radio" id="multiagent" name="multi_single" value="multiagent">
 Multiagentní
 <span class="checkmark"></span>
 </label><br>
 <label class="container">
-<input type="radio" id="partiallyobservable" name="multi_single" value="singleagent">
+<input type="radio" id="singleagent" name="multi_single" value="singleagent">
 Singleagentní
 <span class="checkmark"></span>
 </label> <br><br>
 
 
- <button style="float: right; background-color:#ff0052">Vyhodnoť</button>
+ <button onclick="check()" style="float: right; background-color:#ff0052; color:#ffffff">Vyhodnoť</button>
 <br><br>
 </div>
 
@@ -150,17 +150,17 @@ Singleagentní
 
 <p>Ukážeme si zde několik konkrétních příkladů využití metod umělé inteligence: </p>
 
-<h3 id="problems">Řešení problémů</h3> 
+<h3 id="problems">Řešení problémů</h3>
 
 <p>V umělé inteligenci se zabýváme řešením různých problémů. Můžeme například hledat nejkratší cestu z bodu A do body B, vymýšlet vyhrávací strategii pro nějakou hru nebo   Existují obecné přístupy, které můžeme využít pro řešení různých druhů problémů. </p>
 
-<h3 id="games">Teorie her</h3> 
+<h3 id="games">Teorie her</h3>
 
 <p>Teorie her je oblast, která se zabývá analýzou  </p>
 
 <h4>Další materiály:</h4>
 
-<h5>Úvod do teorie her a řešené úlohy (v češtině):</h5> 
+<h5>Úvod do teorie her a řešené úlohy (v češtině):</h5>
 <p>Materiály od Matematického korespondenčního semináře organizovaného studenty Matematicko-fyzikální fakulty UK: <a href="http://mks.mff.cuni.cz"> mks.mff.cuni.cz</a>
 </p>
 
@@ -175,10 +175,10 @@ Singleagentní
 
 <br><br><br>
 
-<h3 id="robotics">Robotika</h3> 
+<h3 id="robotics">Robotika</h3>
 
 
-<h3 id="planning">Plánování a rozvrhování</h3> 
+<h3 id="planning">Plánování a rozvrhování</h3>
 
 <p>V plánovacích problémech máme popsaný nějaký výchozí stav, ve kterém se nacházíme, a cíl, kterého chceme dosáhnout. K tomu máme seznam možných akcí, které můžeme provést. </p>
 
@@ -207,10 +207,10 @@ Zvedni kostku A
 Polož kostku A na kostku C
 </li></ul>
 
-	<img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />	
+	<img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />
 
 <p>K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
- 
+
 <p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
 
 <p>Navíc můžeme zadat systému informace o zdrojích, které mám k dispozici. Takové zdroje jsou například počty personálu, který může na letadle pracovat při jedné směně, náklady na jednotlivé úkony nebo třeba časová omezení. Program pak vytvoří řešení, které bude nejen funkční, ale také ekonomicky a časově úsporné. </p>
@@ -219,20 +219,20 @@ Polož kostku A na kostku C
 
 <p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
 
-<p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence. 
+<p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.
 </p>
 
 
 <p>Další materiály:</p>
 <a href="dart.pdf">DART</a>
 
-<h3 id="learning">Strojové učení</h3> 
+<h3 id="learning">Strojové učení</h3>
 
 					</div>
-          
-          
 
-				</div>  
+
+
+				</div>
     <!-- end #content -->
 				<div id="sidebar">
 					<ul>
@@ -240,8 +240,8 @@ Polož kostku A na kostku C
 							<a href="index.html"><h2>Projekt Sagitta</h2> </a>
 								<p>Seznamujeme středoškoláky s informatikou a programováním.          </p>
 						</li>
-						
-						
+
+
 						<li>
 							<h2>Obsah</h2>
 							<ul>
@@ -261,9 +261,9 @@ Polož kostku A na kostku C
 								</ul>
 							</ul>
 						</li>
-            
-  					
-						
+
+
+
 					</ul>
 				</div>
 				<!-- end #sidebar -->
@@ -281,3 +281,69 @@ Polož kostku A na kostku C
 </body>
 </html>
 
+<script>
+var clicked_array = [false,false,false];
+var id_array = ["chess","nezlob","robot"];
+var properties_array = ["fullyobservable","partiallyobservable", "deterministic", "stochastic", "discrete", "continuous" , "multiagent", "singleagent"];
+
+function clicked(number) {
+  var id = id_array[number]
+  if (clicked_array[number] === false){
+	for  (var i = 0; i < clicked_array.length; i++){
+		clicked_array[i]=false;
+    	document.getElementById(id_array[i]).style.color = "#000000";
+    	document.getElementById(id_array[i]).style.background = "#cab2de";
+	}
+    clicked_array[number] = true;
+    document.getElementById(id).style.color = "#ffffff";
+    document.getElementById(id).style.background = "#291639";
+  }
+  else {
+    clicked_array[number] = false;
+    document.getElementById(id).style.color = "#000000";
+    document.getElementById(id).style.background = "#cab2de";
+  }
+}
+
+function check() {
+  var nothing = true;
+  for  (var i = 0; i < clicked_array.length; i++){
+	if (clicked_array[i] === true){
+	  nothing = false;
+    }
+  }
+  if (nothing){
+	alert("Klikni na jednu ze situacích v nabídce. ");
+  }
+  else {
+		  var master =[];
+		if(clicked_array[0] === true){
+			master = [true, false, true, false, true, false, true, false];
+		}
+		if(clicked_array[1] === true){
+			master = [true, false, false, true, true, false, true, false];
+		}
+		if(clicked_array[2] === true){
+			master = [false, true, true, false, false, true, false, true];
+		}
+		var error = false;
+		console.log(document.getElementById("deterministic").checked);
+	  for (var i = 0; i < properties_array.length; i++){
+			var value = document.getElementById(properties_array[i]).checked;
+			if (value !== master[i]){
+				error = true;
+			}
+		}
+
+		if (error){
+			alert("Tvé řešení je špatně");
+		}
+		else{
+			alert("Tvé řešení je správně!");			
+		}
+
+
+  }
+}
+
+</script>
