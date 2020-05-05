@@ -38,7 +38,7 @@
 				<div id="content">
 					<div class="post">
 					
-<h1>Umělá inteligence</h1>
+<h1 id="ai">Umělá inteligence</h1>
 
 <p><i>Umělá inteligence je věda o vytváření strojů nebo systémů, které budou při řešení určitého úkolu užívat takového postupu, který – kdyby ho dělal člověk – bychom považovali za projev jeho inteligence<i><p>
 
@@ -47,9 +47,9 @@
 <h4>Co všechno umělá inteligence zahrnuje? </h4>
 <ul>
 <li>
-Řešení problémů (problem solving)
+Řešení problémů (Problem solving)
 </li><li>
-Teorie her (game theory)
+Teorie her (Game theory)
 </li><li>
 Robotika (Robotics)
 </li><li>
@@ -62,10 +62,123 @@ A mnoho dalšího.
 </ul>
 
 
+<h4>Agenti a prostředí</h4>
+
+<p>Můžeme si například představit, že máme tzv. agenty - jedince, kteří se mohou pohybovat v nějakém určeném prostředí a s tím prostředím mohou interagovat. Pomocí takového jedince nebo skupiny jedinců můžeme řešit různé problémy.</p>
+
+
+
+<p>Pro popis prostředí používáme tyto termíny: 
+<ul>
+<li>plně/částěčně pozorovatelné</li> 
+<li>deterministické/stochastické</li> 
+<li>diskrétní/spojité</li>
+<li>sigle/multi agentní</li>
+</ul></p>
+
+<p><strong>Plně pozorovatelné</strong> je takové prostředí, kde máme k dispozici úplnou informaci - žádná část není skryta. Například u hry šachy je prostředí plně pozorovatelné, protože máme kompletní přehled o situaci, vidíme celou hrací plochu i polohu všech figurek. Naopak v situaci, kdy nemáme úplnou informaci a část prostředí nevidíme, nazýváme jej <strong>částečně pozorovatelné</strong>. Příkladem částečně pozorovatelného prostředí je například bludiště, kdy agent vidí jen své přímé okolí, ale více ne.</p>
+
+<p>Ve <strong>stochastickém</strong> prostředí se vyskytuje prvek náhody - například hrací kostka nebo hod mincí. Opakem je prostředí <strong>deterministické</strong>.</p>
+
+
+
+<p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.  
+
+<br><br>
+
+<div id="block">
+<p><b>Rozhodněte, jaké vlastnosti má prostředí v těchto situacích:</b></p>
+
+<button id="chess">Šachy</button> <button id="pacman">Pacman</button> <button id="poker">Poker</button> <button id="rock_paper_scissors">Kámen-nůžky-papír</button>
+<br><br><br>
+
+<label class="container">
+<input type="radio" id="fullyobservable" name="observable" value="fullyobservable">
+Plně pozorovatelné
+<span class="checkmark"></span> 
+</label><br>
+
+<label class="container">
+<input type="radio" id="partiallyobservable" name="observable" value="partiallyobservable">
+Částečně pozorovatelné
+<span class="checkmark"></span> 
+</label>
+<br>
+<br>
+
+<label class="container">
+<input type="radio" id="fullyobservable" name="deter_stoch" value="deterministic">
+Deterministické
+<span class="checkmark"></span> 
+</label><br>
+<label class="container">
+<input type="radio" id="partiallyobservable" name="deter_stoch" value="stochastic">
+Stochastické
+<span class="checkmark"></span> 
+</label> <br><br>
+
+<label class="container">
+<input type="radio" id="fullyobservable" name="disc_cont" value="discrete">
+Diskrétní
+<span class="checkmark"></span>
+</label><br>
+<label class="container">
+<input type="radio" id="partiallyobservable" name="disc_cont" value="continuous">
+Spojité
+<span class="checkmark"></span>
+</label> <br><br>
+
+<label class="container">
+<input type="radio" id="fullyobservable" name="multi_single" value="multiagent">
+Multiagentní
+<span class="checkmark"></span>
+</label><br>
+<label class="container">
+<input type="radio" id="partiallyobservable" name="multi_single" value="singleagent">
+Singleagentní
+<span class="checkmark"></span>
+</label> <br><br>
+
+
+ <button style="float: right; background-color:#ff0052">Vyhodnoť</button>
+<br><br>
+</div>
+
+
+
+
 
 <p>Ukážeme si zde několik konkrétních příkladů využití metod umělé inteligence: </p>
 
-<h3>Plánování a rozvrhování:</h3> 
+<h3 id="problems">Řešení problémů</h3> 
+
+<p>V umělé inteligenci se zabýváme řešením různých problémů. Můžeme například hledat nejkratší cestu z bodu A do body B, vymýšlet vyhrávací strategii pro nějakou hru nebo   Existují obecné přístupy, které můžeme využít pro řešení různých druhů problémů. </p>
+
+<h3 id="games">Teorie her</h3> 
+
+<p>Teorie her je oblast, která se zabývá analýzou  </p>
+
+<h4>Další materiály:</h4>
+
+<h5>Úvod do teorie her a řešené úlohy (v češtině):</h5> 
+<p>Materiály od Matematického korespondenčního semináře organizovaného studenty Matematicko-fyzikální fakulty UK: <a href="http://mks.mff.cuni.cz"> mks.mff.cuni.cz</a>
+</p>
+
+<p><a href="materials/TeorieHerKomplet.pdf"> Teorie her (PDF)</a>, <p>
+<p>Řešené úlohy z teorie her: </p>
+<ul>
+<li><a href="materials/TeorieHer1.pdf">Úlohy - 1. část</a></li>
+<li><a href="materials/TeorieHer2.pdf">Úlohy - 2. část</a></li>
+<li><a href="materials/TeorieHer3.pdf">Úlohy - 3. část</a></li>
+</ul>
+
+
+<br><br><br>
+
+<h3 id="robotics">Robotika</h3> 
+
+
+<h3 id="planning">Plánování a rozvrhování</h3> 
 
 <p>V plánovacích problémech máme popsaný nějaký výchozí stav, ve kterém se nacházíme, a cíl, kterého chceme dosáhnout. K tomu máme seznam možných akcí, které můžeme provést. </p>
 
@@ -94,6 +207,8 @@ Zvedni kostku A
 Polož kostku A na kostku C
 </li></ul>
 
+	<img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />	
+
 <p>K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
  
 <p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
@@ -107,10 +222,11 @@ Polož kostku A na kostku C
 <p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence. 
 </p>
 
-<button> testovací čudlík</button>
 
 <p>Další materiály:</p>
 <a href="dart.pdf">DART</a>
+
+<h3 id="learning">Strojové učení</h3> 
 
 					</div>
           
@@ -127,12 +243,22 @@ Polož kostku A na kostku C
 						
 						
 						<li>
-							<a href="index.html"><h2>Obsah</h2> </a>
+							<h2>Obsah</h2>
 							<ul>
-							<li>Umělá inteligence</li>
-							<li>Řešení problémů</li>
-							<li>Teorie her</li>
-							<li>Plánování a rozvrhování</li>
+							<li><a href="#ai"><h4>Umělá inteligence</h4></a></li>
+								<ul>
+									<li><a href="#problems">Řešení problémů</a></li>
+									<li><a href="#games">Teorie her</a></li>
+									<li><a href="#robotics">Robotika</a></li>
+									<li><a href="#planning">Plánování a rozvrhování</a></li>
+									<li><a href="#learning">Strojové učení</a></li>
+								</ul>
+							<li><a href="#clustering"><h4>Shlukování</h4></a></li>
+								<ul>
+									<li><a href="#clustering_intro">Shlukování - Clustering</a></li>
+									<li><a href="#kmeans">K-means</a></li>
+									<li><a href="#hierarchy">Hierarchické shluování</a></li>
+								</ul>
 							</ul>
 						</li>
             

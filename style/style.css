@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 30px 0px 0px 0px;
 	background: #291639 url(bottom.svg) repeat-x left bottom;
-	font-family: Titillium Web;
+	font-family: Arial;
 	font-size: 14px;
 	color: #291639;
 }
@@ -29,7 +29,17 @@ h2 {
 
 h3 {
 	font-size: 1.6em;
-  color: #25366E;
+  color: #ff0052;
+}
+
+h4 {
+	font-size: 1.2em;
+  color: #ff0052;
+}
+
+h5 {
+	font-size: 1.2em;
+  color: #291639;
 }
 
 p, ul, ol {
@@ -40,9 +50,20 @@ p, ul, ol {
 ul, ol {
 }
 
+button {
+	color: #FFFFFF;
+	background-color: #291639;
+	padding: 10px;
+	border: none;
+    	border-radius: 6px;
+	font-family: Titillium Web;
+	font-weight: normal;
+	
+}
+
 a {
 	text-decoration: none;
-	color: #AF0706;
+	color: #ff0052;
 }
 
 a:hover {
@@ -232,6 +253,17 @@ img.aligncenter {
   
 }
        
+/* Block */
+
+#block {
+	float: middle;
+	width: 400px;
+	padding: 0px 0px 0px 0px;
+	background-color: #eeeeee;
+	padding: 20px;
+    	border-radius: 6px;
+}
+       
 /* Content */
 
 #content {
@@ -405,5 +437,68 @@ img.aligncenter {
 	border-color: #af0706;
 	text-align:center;
 }  
+
+/*Emphasis*/
+
+strong {
+	color: #ff0052;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: -2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color:  #ccc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #291639;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
 
  

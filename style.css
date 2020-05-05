@@ -15,7 +15,7 @@ h1, h2, h3 {
 	padding: 0;
 	font-family: Titillium Web;
 	font-weight: normal;
-	color: #181b20;
+	color: #ff0052;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
 
 h3 {
 	font-size: 1.6em;
-  color: #25366E;
+  color: #ff0052;
 }
 
 p, ul, ol {
