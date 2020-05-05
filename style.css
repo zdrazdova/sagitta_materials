@@ -2,11 +2,11 @@
 
 
 body {
-	margin: 0px 0px 0px 0px ;
-	padding: 0;
-	background: #291639 url(images/uvodsmall.jpg) no-repeat center top ;
-	font-family: trebuchet MS, Helvetica, sans-serif;
-	font-size: 16px;
+	margin: 0;
+	padding: 30px 0px 0px 0px;
+	background: #291639 url(bottom.svg) repeat-x left bottom;
+	font-family: Titillium Web;
+	font-size: 14px;
 	color: #291639;
 }
 
@@ -14,8 +14,8 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 	font-family: Titillium Web;
-	font-weight: semibold;
-	color: #ff0052;
+	font-weight: normal;
+	color: #181b20;
 }
 
 h1 {
@@ -82,7 +82,7 @@ img.aligncenter {
 }
 
 #header {
-	width: 960px;
+	width: 100%;
 	height: 200px;
 	margin: 0 auto;
 }
@@ -169,12 +169,11 @@ img.aligncenter {
 /* Menu */
 
 #menu {
-	width: 80%;
-	height: 70px;
+	width: 940px;
+	height: 50px;
 	margin: 0px auto;
-	padding: 20px 0px 0px 20px;
-	background: #291639 url(logo.svg) no-repeat right 20px top 12px;
-	text-align: center;
+	padding: 20px 20px 0px 20px;
+	background: #291639;
 }
 
 #menu ul {
@@ -191,15 +190,14 @@ img.aligncenter {
 #menu a {
 	display: block;
 	float: center;
-	height: 56px;
+	height: 46px;
 	margin: 0px;
-	padding: 0px 30px 0px 30px;
-	line-height: 56px;
-	letter-spacing: -1px;
+	padding: 0px 20px 0px 20px;
+	line-height: 46px;
+	letter-spacing: 0px;
 	text-decoration: none;
 	font-family: Titillium web;
-	text-align: center;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: bold;
 	color: #FFFFFF;
 	border: none;
@@ -207,7 +205,6 @@ img.aligncenter {
 
 #menu .current_page_item a {
 	background: #ff0052;
-
     border-radius: 6px;
 	
 }
@@ -220,11 +217,10 @@ img.aligncenter {
 /* Page */
 
 #page {
-	width: 80%;
+	width: 980px;
 	margin: 0 auto;
-	padding: 50px;
-	background: #FFFFFF;
-  /*background: #FFFFFF url(images/logo5.png)  no-repeat left 20px bottom 20px; */
+	padding: 0;
+	background: #FFFFFF ;
 }
 
 #page-bgtop {
@@ -235,20 +231,13 @@ img.aligncenter {
 	padding: 40px 30px 0px 30px;
   
 }
-
-/* Inside */
-
-#inside {
-    background-color: #00FFFF;
-}
        
 /* Content */
 
 #content {
-    background-color: #FFFFFF;
 	float: right;
-	width: 70%;
-	padding: 22px;
+	width: 600px;
+	padding: 0px 0px 0px 0px;
 }
 
 .post {
@@ -304,9 +293,9 @@ img.aligncenter {
 
 #sidebar {
 	float: left;
-	width: 25%;
+	width: 260px;
 	padding: 0px 0px 0px 0px;
-  background: #af7ae4;
+  background: url(imgages/logo4.png)  no-repeat left bottom;
 }
 
 #sidebar ul {
