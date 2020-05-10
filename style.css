@@ -400,10 +400,10 @@ img.aligncenter {
 #table, th, td {
 	width: 600px;
 	height: 36px;
-	background-color: #EEE7DF;
+	background-color: #eeeeee;
 	border: 2px;
 	border-color: #af0706;
-	text-align:center;
+	text-align:left;
 }  
 
  

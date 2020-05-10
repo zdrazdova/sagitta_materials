@@ -24,7 +24,7 @@ h1 {
 
 h2 {
 	font-size: 2em;
-  color: #25366E;
+  color: #291639;
 }
 
 h3 {
@@ -45,9 +45,12 @@ h5 {
 p, ul, ol {
 	margin-top: 0;
 	line-height: 180%;
+
 }
 
-ul, ol {
+ul {
+
+	list-style-type: square;
 }
 
 button {
@@ -238,7 +241,7 @@ img.aligncenter {
 /* Page */
 
 #page {
-	width: 980px;
+	width: 1080px;
 	margin: 0 auto;
 	padding: 0;
 	background: #FFFFFF ;
@@ -268,7 +271,7 @@ img.aligncenter {
 
 #content {
 	float: right;
-	width: 600px;
+	width: 700px;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -430,13 +433,20 @@ img.aligncenter {
 /* Table */
 
 #table, th, td {
-	width: 600px;
 	height: 36px;
-	background-color: #EEE7DF;
+	background-color: #eeeeee;
 	border: 2px;
-	border-color: #af0706;
-	text-align:center;
+	border-color: #ffffff;
+	text-align:left;
 }  
+
+th {
+	width: 300px;
+	text-align:center;
+	background-color: #291639;
+	color: #ffffff;
+
+}
 
 /*Emphasis*/
 
