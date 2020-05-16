@@ -3,283 +3,306 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Sagitta</title>
-<link rel="icon" href="img/favicon.png" sizes="16x16">
-<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
-<link href="style/style.css" rel="stylesheet" type="text/css" media="all" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Sagitta</title>
+  <link rel="icon" href="img/favicon.png" sizes="16x16">
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 <div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-	<img src="img/header_ai.svg" width="100%" height="200px" alt="" class="aligncenter " />
-
-	</div>
-	<!-- end #header -->
-	<div id="menu">
-
-    <ul>
-			<li><a href="index.html">Sagitta</a></li>
-			<li><a href="programovani.html">Začni s programováním</a></li>
-			<li class="current_page_item"><a href="ai.html">Poznej, co je umělá inteligence</a></li>
-			<li><a href="aktivity.html">Vyzkoušej další aktivity</a></li>
-			<li><a href="kontakt.html">Kontaktuj nás</a></li>
-		</ul>
- 	</div>
-	<!-- end #menu -->
-
-	 <div id="page" >
-    <div id="page-bgtop">
-			<div id="page-bgbtm">
-				<div id="content">
-					<div class="post">
-
-<h1 id="ai">Umělá inteligence</h1>
-
-<p><i>Umělá inteligence je věda o vytváření strojů nebo systémů, které budou při řešení určitého úkolu užívat takového postupu, který – kdyby ho dělal člověk – bychom považovali za projev jeho inteligence<i><p>
-
-<p>(Marvin Minsky)</p>
-
-<h4>Co všechno umělá inteligence zahrnuje? </h4>
-<ul>
-<li>
-Řešení problémů (Problem solving)
-</li><li>
-Teorie her (Game theory)
-</li><li>
-Robotika (Robotics)
-</li><li>
-Plánování a rozvrhování (Planning and scheduling)
-</li><li>
-Strojové učení (Machine learning)
-</li><li>
-A mnoho dalšího.
-</li>
-</ul>
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="img/header_ai.svg" width="100%" height="200px" alt="" class="aligncenter " />
+    </div> <!-- end #header -->
+    <div id="menu">
+        <ul>
+        <li><a href="index.html">Sagitta</a></li>
+        <li><a href="programovani.html">Začni s programováním</a></li>
+        <li class="current_page_item"><a href="ai.html">Poznej, co je umělá inteligence</a></li>
+        <li><a href="aktivity.html">Vyzkoušej další aktivity</a></li>
+        <li><a href="kontakt.html">Kontaktuj nás</a></li>
+      </ul>
+    </div> <!-- end #menu -->
+    <div id="page" >
+      <div id="page-bgtop">
+        <div id="page-bgbtm">
+          <div id="content">
+            <div class="post">
+              <h1 id="ai">Umělá inteligence</h1>
+              <br>
+              <p>O umělé inteligenci, jejich převratných možnostech i přidružených nebezpečích slýcháme z médií téměř každý den. Většina lidí však moc neví, co to ta umělá inteligence vlastně je. Chceme vám zde představit základní koncepty, jednoduché úlohy i příklady praktického použití různých podoborů umělé inteligence.</p>
+
+              <div id="block">
+                <p><i>Umělá inteligence je věda o vytváření strojů nebo systémů, které budou při řešení určitého úkolu užívat takového postupu, který – kdyby ho dělal člověk – bychom považovali za projev jeho inteligence</i></p> <p style="text-align:right">(Marvin Minsky, 1967)</p>
+              </div>
+
+              <h4>Co všechno umělá inteligence zahrnuje? </h4>
+              <ul>
+                <li>Řešení problémů (Problem solving)</li>
+                <li>Teorie her (Game theory)</li>
+                <li>Robotika (Robotics)</li>
+                <li>Plánování a rozvrhování (Planning and scheduling)</li>
+                <li>Strojové učení (Machine learning)</li>
+                <li>A mnoho dalšího...</li>
+              </ul>
+
+              <p>Umělá inteligence bývá velmi často spojována a bohužel i někdy zaměňována se Strojovým učením. Oblast strojového učení (anglicky: Machine learning) je jedním z podoborů umělé inteligence. V posledních pár letech zažívá strojové učení velký rozvoj a dá se čekat, že do budoucna bude zájem o tento obor ještě narůstat. Proto se mu zde budeme věnovat do větší hloubky. </p>
+              <hr>
+
+              <br>
+              <h2>Úvod do Umělé inteligence</h2>              
+
+              <h4 id="agents">Agenti a prostředí</h4>
+
+              <p>Můžeme si například představit, že máme tzv. agenty – jedince, kteří se mohou pohybovat v nějakém určeném prostředí a s tím prostředím mohou interagovat. Pomocí takového jedince nebo skupiny jedinců můžeme řešit různé problémy.</p>
+
+              <p>Pro popis prostředí používáme tyto termíny:
+                <ul>
+                  <li>plně/částěčně pozorovatelné</li>
+                  <li>deterministické/stochastické</li>
+                  <li>diskrétní/spojité</li>
+                  <li>sigle/multi agentní</li>
+                </ul>
+              </p>
+
+              <p><strong>Plně pozorovatelné</strong> je takové prostředí, kde máme k dispozici úplnou informaci - žádná část není skryta. Například u hry šachy je prostředí plně pozorovatelné, protože máme kompletní přehled o situaci, vidíme celou hrací plochu i polohu všech figurek. Naopak v situaci, kdy nemáme úplnou informaci a část prostředí nevidíme, nazýváme jej <strong>částečně pozorovatelné</strong>. Příkladem částečně pozorovatelného prostředí je například bludiště, kdy agent vidí jen své přímé okolí, ale více ne.</p>
+
+              <p>Ve <strong>stochastickém</strong> prostředí se vyskytuje prvek náhody - například hrací kostka nebo hod mincí. Opakem je prostředí <strong>deterministické</strong>.</p>
+
+              <p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.
+
+              <br><br>
+
+              <div id="block">
+                <p><b>Rozhodněte, jaké vlastnosti má prostředí v těchto situacích:</b></p>
+
+                <button id="chess" onclick="clicked(0)">Šachy</button> <button id="nezlob" onclick="clicked(1)">Člověče, nezlob se!</button> <button id="robot" onclick="clicked(2)">Robot v bludišti</button>
+                <br><br><br>
+
+                <label class="container">
+                  <input type="radio" id="fullyobservable" name="observable" value="fullyobservable">
+                  Plně pozorovatelné
+                  <span class="checkmark"></span>
+                </label> <br>
+
+                <label class="container">
+                  <input type="radio" id="partiallyobservable" name="observable" value="partiallyobservable">
+                  Částečně pozorovatelné
+                  <span class="checkmark"></span>
+                </label> <br><br>
+
+                <label class="container">
+                  <input type="radio" id="deterministic" name="deter_stoch" value="deterministic">
+                  Deterministické
+                  <span class="checkmark"></span>
+                </label><br>
+
+                <label class="container">
+                  <input type="radio" id="stochastic" name="deter_stoch" value="stochastic">
+                  Stochastické
+                  <span class="checkmark"></span>
+                </label> <br><br>
+
+                <label class="container">
+                  <input type="radio" id="discrete" name="disc_cont" value="discrete">
+                  Diskrétní
+                  <span class="checkmark"></span>
+                </label> <br>
+
+                <label class="container">
+                  <input type="radio" id="continuous" name="disc_cont" value="continuous">
+                  Spojité
+                  <span class="checkmark"></span>
+                </label> <br><br>
 
+                <label class="container">
+                  <input type="radio" id="multiagent" name="multi_single" value="multiagent">
+                  Multiagentní
+                  <span class="checkmark"></span>
+                </label> <br>
 
-<h4>Agenti a prostředí</h4>
+                <label class="container">
+                  <input type="radio" id="singleagent" name="multi_single" value="singleagent">
+                  Singleagentní
+                  <span class="checkmark"></span>
+                </label> <br><br>
 
-<p>Můžeme si například představit, že máme tzv. agenty - jedince, kteří se mohou pohybovat v nějakém určeném prostředí a s tím prostředím mohou interagovat. Pomocí takového jedince nebo skupiny jedinců můžeme řešit různé problémy.</p>
+                <button onclick="check()" style="float: right; background-color:#ff0052; color:#ffffff">Vyhodnoť</button> <br><br>
+              </div>
 
+              <p>Ukážeme si zde několik konkrétních příkladů využití metod umělé inteligence: </p>
 
+              <h3 id="problems">Řešení problémů</h3>
+              <p>V umělé inteligenci se zabýváme řešením různých problémů. Můžeme například hledat nejkratší cestu z bodu A do body B, vymýšlet vyhrávací strategii pro nějakou hru nebo   Existují obecné přístupy, které můžeme využít pro řešení různých druhů problémů. </p>
 
-<p>Pro popis prostředí používáme tyto termíny:
-<ul>
-<li>plně/částěčně pozorovatelné</li>
-<li>deterministické/stochastické</li>
-<li>diskrétní/spojité</li>
-<li>sigle/multi agentní</li>
-</ul></p>
+              <h3 id="games">Teorie her</h3>
+              <p>Teorie her je oblast, která se zabývá analýzou  </p>
 
-<p><strong>Plně pozorovatelné</strong> je takové prostředí, kde máme k dispozici úplnou informaci - žádná část není skryta. Například u hry šachy je prostředí plně pozorovatelné, protože máme kompletní přehled o situaci, vidíme celou hrací plochu i polohu všech figurek. Naopak v situaci, kdy nemáme úplnou informaci a část prostředí nevidíme, nazýváme jej <strong>částečně pozorovatelné</strong>. Příkladem částečně pozorovatelného prostředí je například bludiště, kdy agent vidí jen své přímé okolí, ale více ne.</p>
+              <h4>Další materiály:</h4>
+              <h5>Úvod do teorie her a řešené úlohy (v češtině):</h5>
+              <p>Materiály od Matematického korespondenčního semináře organizovaného studenty Matematicko-fyzikální fakulty UK: <a href="http://mks.mff.cuni.cz"> mks.mff.cuni.cz</a>
+              </p>
 
-<p>Ve <strong>stochastickém</strong> prostředí se vyskytuje prvek náhody - například hrací kostka nebo hod mincí. Opakem je prostředí <strong>deterministické</strong>.</p>
+              <p><a href="materials/TeorieHerKomplet.pdf"> Teorie her (PDF)</a>, <p>
+              <p>Řešené úlohy z teorie her: </p>
+              <ul>
+                <li><a href="materials/TeorieHer1.pdf">Úlohy - 1. část</a></li>
+                <li><a href="materials/TeorieHer2.pdf">Úlohy - 2. část</a></li>
+                <li><a href="materials/TeorieHer3.pdf">Úlohy - 3. část</a></li>
+              </ul>
 
+              <br><br><br><br>
 
+              <h3 id="robotics">Robotika</h3>
 
-<p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.
+              <p>Robotika je obor, který nejlépe poznáš, když si robota zkusíš postavit a naprogramovat. Existují stavebnice LEGO Mindstorms, které jsou určené právě pro výuku základů robotiky. Díky nim si můžeš postavit a naprogramovat robota během několika málo hodin. Pomocí robotů ze stavebnic LEGO Mindstorms <a href="https://lego.zcu.cz/web/moduly-systemu-lego-nxt"target="_blank"> NXT2 </a> nebo <a href="https://education.lego.com/en-us/support/mindstorms-ev3/getting-started"target="_blank"> EV3 </a> můžeš řešit jednoduché problémy jako najít cestu z bludiště nebo sledovat barevnou čáru na zemi.</p>
 
-<br><br>
+              <p>Pro složitější úkoly je dobré použít k řízení robota například <a href="https://www.arduino.cc/en/Guide/Introduction"target="_blank"> Arduino </a> nebo <a href="https://www.raspberrypi.org/"target="_blank"> Raspberry Pi </a> a k nim si pořídit vhodné motory, senzory a další součástky.</p>
 
-<div id="block">
-<p><b>Rozhodněte, jaké vlastnosti má prostředí v těchto situacích:</b></p>
+              <p>Doporučujeme vyzkoušet některou robotickou soutěž pro žáky ZŠ nebo studenty SŠ. Pokud nemáš doma nebo ve škole žádnou robotickou stavebnici, doporučujeme vyzkoušet Robosoutěž na ČVUT, kde je možné si stavebnici zapůjčit. </p>
 
-<button id="chess" onclick="clicked(0)">Šachy</button> <button id="nezlob" onclick="clicked(1)">Člověče, nezlob se!</button> <button id="robot" onclick="clicked(2)">Robot v bludišti</button>
-<br><br><br>
+              <p><strong>Soutěže:</strong></p>
+              <ul>
+                <li><a href="https://robosoutez.fel.cvut.cz/" target="_blank">Robosoutěž pro SŠ a ZŠ</a></li>
+                <li><a href="http://robotickyden.cz/2019/" target="_blank">Robotický den </a></li>
+                <li><a href="http://www.amavet.cz/" target="_blank">RoboRave </a></li>
+                <li><a href="http://www.firstlegoleague.cz/" target="_blank">FIRST LEGO league </a></li>
+                <li><a href="https://robotika.cz/competitions/cs" target="_blank">Seznam dalších soutěží </a></li>
+               </ul>
 
-<label class="container">
-<input type="radio" id="fullyobservable" name="observable" value="fullyobservable">
-Plně pozorovatelné
-<span class="checkmark"></span>
-</label><br>
+               <br><br>
 
-<label class="container">
-<input type="radio" id="partiallyobservable" name="observable" value="partiallyobservable">
-Částečně pozorovatelné
-<span class="checkmark"></span>
-</label>
-<br>
-<br>
+              <h3 id="planning">Plánování a rozvrhování</h3>
+              <p>V plánovacích problémech máme popsaný nějaký výchozí stav, ve kterém se nacházíme, a cíl, kterého chceme dosáhnout. K tomu máme seznam možných akcí, které můžeme provést. </p>
 
-<label class="container">
-<input type="radio" id="deterministic" name="deter_stoch" value="deterministic">
-Deterministické
-<span class="checkmark"></span>
-</label><br>
-<label class="container">
-<input type="radio" id="stochastic" name="deter_stoch" value="stochastic">
-Stochastické
-<span class="checkmark"></span>
-</label> <br><br>
+              <p>Nejjednodušší příklad je tzv. Block world - svět kostek: Máme na stole několik kostek. Každou kostku, na které není jiná kostka, můžeme vzít a buď přesunout na stůl nebo na jinou kostku. </p>
 
-<label class="container">
-<input type="radio" id="discrete" name="disc_cont" value="discrete">
-Diskrétní
-<span class="checkmark"></span>
-</label><br>
-<label class="container">
-<input type="radio" id="continuous" name="disc_cont" value="continuous">
-Spojité
-<span class="checkmark"></span>
-</label> <br><br>
+              <p>Na začátku máme nějaký výchozí stav: kostka A je na kostce B a ta je na kostce C. Cílem je kostky přeskládat tak, aby A byla na C a ta na B. </p>
 
-<label class="container">
-<input type="radio" id="multiagent" name="multi_single" value="multiagent">
-Multiagentní
-<span class="checkmark"></span>
-</label><br>
-<label class="container">
-<input type="radio" id="singleagent" name="multi_single" value="singleagent">
-Singleagentní
-<span class="checkmark"></span>
-</label> <br><br>
+              <p>Povolené akce jsou <strong>zvednout kostku</strong>, <strong>položit kostku na stůl</strong> a <strong>položit kostku na jinou kostku</strong>.
 
+              <p>V plánování je naším cílem sestavit posloupnost akcí, která povede z výchozího stavu do cílového. V tomto případě je tedy řešení například:</p>
+              <ul>
+                <li>Zvedni kostku A</li>
+                <li>Polož kostku A na stůl</li>
+                <li>Zvedni kostku B</li>
+                <li>Polož kostku B na stůl</li>
+                <li>Zvedni kostku C</li>
+                <li>Polož kostku C na kostku B</li>
+                <li>Zvedni kostku A</li>
+                <li>Polož kostku A na kostku C</li>
+              </ul>
 
- <button onclick="check()" style="float: right; background-color:#ff0052; color:#ffffff">Vyhodnoť</button>
-<br><br>
-</div>
+              <img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />
 
+              <p>K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
 
+              <p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
 
+              <p>Navíc můžeme zadat systému informace o zdrojích, které mám k dispozici. Takové zdroje jsou například počty personálu, který může na letadle pracovat při jedné směně, náklady na jednotlivé úkony nebo třeba časová omezení. Program pak vytvoří řešení, které bude nejen funkční, ale také ekonomicky a časově úsporné. </p>
 
+              <p>Této druhé části se říká rozvrhování. Je to obor, který se zabývá právě efektivnímu přiřazování zdrojů, když už máme vytvořený plán. </p>
 
-<p>Ukážeme si zde několik konkrétních příkladů využití metod umělé inteligence: </p>
+              <p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
 
-<h3 id="problems">Řešení problémů</h3>
+              <p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.</p>
 
-<p>V umělé inteligenci se zabýváme řešením různých problémů. Můžeme například hledat nejkratší cestu z bodu A do body B, vymýšlet vyhrávací strategii pro nějakou hru nebo   Existují obecné přístupy, které můžeme využít pro řešení různých druhů problémů. </p>
 
-<h3 id="games">Teorie her</h3>
+              <p>Další materiály:</p>
+              <a href="dart.pdf">DART</a>
 
-<p>Teorie her je oblast, která se zabývá analýzou  </p>
 
-<h4>Další materiály:</h4>
+              <hr>
 
-<h5>Úvod do teorie her a řešené úlohy (v češtině):</h5>
-<p>Materiály od Matematického korespondenčního semináře organizovaného studenty Matematicko-fyzikální fakulty UK: <a href="http://mks.mff.cuni.cz"> mks.mff.cuni.cz</a>
-</p>
+              <br><br>
 
-<p><a href="materials/TeorieHerKomplet.pdf"> Teorie her (PDF)</a>, <p>
-<p>Řešené úlohy z teorie her: </p>
-<ul>
-<li><a href="materials/TeorieHer1.pdf">Úlohy - 1. část</a></li>
-<li><a href="materials/TeorieHer2.pdf">Úlohy - 2. část</a></li>
-<li><a href="materials/TeorieHer3.pdf">Úlohy - 3. část</a></li>
-</ul>
+              <h3 id="learning">Strojové učení</h3>
 
+              <br>
 
-<br><br><br>
+              <p>Strojové učení je obor, kde učíme programy plnit různé úkoly jako například překládat text z angličtiny do češtiny, rozpoznávat, co je na daném obrázku, hrát různé hry a mnoho dalšího. </p>
 
-<h3 id="robotics">Robotika</h3>
+              <p id="proccess">Zjednodušená myšlenka je taková, že programu předložíme velké množství správných dat pro daný úkol. Program si ty data projde a naučí se z nich, jak úkol plnit. Tomuto procesu se říká <strong>trénování</strong>. Například pokud chceme, aby program rozpoznával, zda je na obrázku jablko nebo hruška, dáme mu nejprve stovky nebo tisíce obrázků, na kterých bude vždy jablko nebo hruška a k tomu bude příslušný popisek, kterému se říká <strong>label</strong>. Ty obrázky budou různé, mohou tam být různé odrůdy jablek, některé kusy budou větší, některé menší, některé pootočené nebo nějak převrácené.</p>
 
+              <p>Těmto pokladům se říká <strong>trénovací data</strong>. Důležité je, aby těchno dat bylo hodně. Program se z nich naučí poznat rozdíl mezi jablky a hruškami. Když poté program dostane nějaký obrázek, bude schopen určit, jestli je na něm jablko nebo hruška i když předtím tento konkrétní obrázek ještě nidky neviděl. </p>
 
-<h3 id="planning">Plánování a rozvrhování</h3>
+              <strong>Úkol:</strong> <p>Rozpoznej, zda je na daném obrázku jablko nebo hruška.</p>
 
-<p>V plánovacích problémech máme popsaný nějaký výchozí stav, ve kterém se nacházíme, a cíl, kterého chceme dosáhnout. K tomu máme seznam možných akcí, které můžeme provést. </p>
+              <strong>Trénovací data:</strong>
 
-<p>Nejjednodušší příklad je tzv. Block world - svět kostek: Máme na stole několik kostek. Každou kostku, na které není jiná kostka, můžeme vzít a buď přesunout na stůl nebo na jinou kostku. </p>
+              <img src="img/train_data.svg" width="100%"alt="" class="aligncenter " />
+              <br><br>
+              <strong>Obrázek:</strong>
+              <br>
 
-<p>Na začátku máme nějaký výchozí stav: kostka A je na kostce B a ta je na kostce C. Cílem je kostky přeskládat tak, aby A byla na C a ta na B. </p>
+              <p> <img src="img/hruska.svg" width="30%"alt="" /> Typ úkolu, kdy máme zařadit objekt do některé z daných kategorií, se nazývá <strong>klasifikace</strong>. V tomto případě máme jen dvě třídy, do kterých objekty klasifikujeme: jablka a hrušky. </p>
 
-<p>Povolené akce jsou <strong>zvednout kostku</strong>, <strong>položit kostku na stůl</strong> a <strong>položit kostku na jinou kostku</strong>.
+              <p>Tříd pro klasifikaci může být více. Například můžeme rozpoznávat ručně psané číslice. V tom případě máme kategorií 10 (od 0 do 9). Automatické rozpoznávání ručně psaných číslic se využívá při načítání částek na šeku nebo poštovních směrovacích čisel na obálkách.</p>
 
-<p>V plánování je naším cílem sestavit posloupnost akcí, která povede z výchozího stavu do cílového. V tomto případě je tedy řešení například:</p>
-<ul><li>
-Zvedni kostku A
-</li><li>
-Polož kostku A na stůl
-</li><li>
-Zvedni kostku B
-</li><li>
-Polož kostku B na stůl
-</li><li>
-Zvedni kostku C
-</li><li>
-Polož kostku C na kostku B
-</li><li>
-Zvedni kostku A
-</li><li>
-Polož kostku A na kostku C
-</li></ul>
+              <p>Pro takový úkol je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků pro následné ohodnocení úspěšnosti našeho programů. Té druhé části se říká <strong>testovací data</strong>.</p>
 
-	<img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />
+              <h3 id="types">Typy úkolů</h3>
 
-<p>K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
+              <ul>
+                <li><strong>Klasifikace</strong> - daný vstup máme zařadit do některé z určených tříd
+                  <img src="img/classification.svg" width="100%"alt="" class="aligncenter " />
+                </li>
+                <li><strong>Regrese</strong> - pro daný vstup máme vypsat adekvátní výstup, obvykle reálné číslo
+                  <img src="img/regression.svg" width="100%"alt="" class="aligncenter " />
+                </li>
+                <li><strong>Shlukování</strong> - data na vstupu máme seskupit do několika skupin podle toho, jak jsou si data podobná nebo naopak odlišná
+                  <img src="img/clustering.svg" width="100%"alt="" class="aligncenter " />
+                </li>
+              </ul>
 
-<p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
+              <h3 id="use">Užití strojového učení</h3>
 
-<p>Navíc můžeme zadat systému informace o zdrojích, které mám k dispozici. Takové zdroje jsou například počty personálu, který může na letadle pracovat při jedné směně, náklady na jednotlivé úkony nebo třeba časová omezení. Program pak vytvoří řešení, které bude nejen funkční, ale také ekonomicky a časově úsporné. </p>
 
-<p>Této druhé části se říká rozvrhování. Je to obor, který se zabývá právě efektivnímu přiřazování zdrojů, když už máme vytvořený plán. </p>
+            </div>
+        </div> <!-- end #content -->
 
-<p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
+        <div id="sidebar">
+          <ul>
+            <li><a href="index.html"><h2>Projekt Sagitta</h2></a>
+              <ul>
+                <li>Seznamujeme středoškoláky s&nbsp;informatikou a&nbsp;programováním. </li>
+                <hr width="50%" >
+                <li>Pomáháme s&nbsp;přípravou a&nbsp;testováním studijních materiálů. </li>
+                <hr width="50%" >
+                <li>Úzce spolupracujeme se soutěží v programování <a href="http://kasiopea.matfyz.cz"  target="_blank">Kasiopea</a>.</li>
+              </ul>
+            </li>
 
-<p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.
-</p>
-
-
-<p>Další materiály:</p>
-<a href="dart.pdf">DART</a>
-
-<h3 id="learning">Strojové učení</h3>
-
-					</div>
-
-
-
-				</div>
-    <!-- end #content -->
-				<div id="sidebar">
-					<ul>
-		<li>
-		<a href="index.html"><h2>Projekt Sagitta</h2> </a>
-		<ul>
-			<li>Seznamujeme středoškoláky s&nbsp;informatikou a&nbsp;programováním. </li>
-			<hr width="50%" >
-			<li>Pomáháme s&nbsp;přípravou a&nbsp;testováním studijních materiálů. </li>
-			<hr width="50%" >
-			<li>Úzce spolupracujeme se soutěží v programování <a href="http://kasiopea.matfyz.cz">Kasiopea</a>.</li>
-		</ul>
-		</li>
-
-
-						<li>
-							<h2>Obsah</h2>
-							<ul>
-							<li><a href="#ai"><h4>Umělá inteligence</h4></a></li>
-								<ul>
-									<li><a href="#problems">Řešení problémů</a></li>
-									<li><a href="#games">Teorie her</a></li>
-									<li><a href="#robotics">Robotika</a></li>
-									<li><a href="#planning">Plánování a rozvrhování</a></li>
-									<li><a href="#learning">Strojové učení</a></li>
-								</ul>
-							<li><a href="#clustering"><h4>Shlukování</h4></a></li>
-								<ul>
-									<li><a href="#clustering_intro">Shlukování - Clustering</a></li>
-									<li><a href="#kmeans">K-means</a></li>
-									<li><a href="#hierarchy">Hierarchické shluování</a></li>
-								</ul>
-							</ul>
-						</li>
-
-
-
-					</ul>
-				</div>
-				<!-- end #sidebar -->
-			 	<div style="clear: both;"></div>
-
+            <li><h2>Obsah</h2>
+              <ul>
+                <li><a href="#ai"><h4>Umělá inteligence</h4></a></li>
+                <ul>
+                  <li><a href="#agents">Agenti a prostředí</a></li>
+                  <li><a href="#problems">Řešení problémů</a></li>
+                  <li><a href="#games">Teorie her</a></li>
+                  <li><a href="#robotics">Robotika</a></li>
+                  <li><a href="#planning">Plánování a rozvrhování</a></li>
+                </ul>
+                  <li><a href="#learning">Strojové učení</a></li>
+                <ul>
+                  <li><a href="#proccess">Proces strojového učení</a></li>
+                  <li><a href="#types">Typy úkolů</a></li>
+                  <li><a href="#use">Užití v praxi</a></li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;"></div>
       </div>
-		</div>
-	</div>
- 	<!-- end #page -->
+    </div>
+  </div>
+  <!-- end #page -->
 </div>
 <div id="footer">
 
@@ -296,11 +319,11 @@ var properties_array = ["fullyobservable","partiallyobservable", "deterministic"
 function clicked(number) {
   var id = id_array[number]
   if (clicked_array[number] === false){
-	for  (var i = 0; i < clicked_array.length; i++){
-		clicked_array[i]=false;
-    	document.getElementById(id_array[i]).style.color = "#000000";
-    	document.getElementById(id_array[i]).style.background = "#cab2de";
-	}
+  for  (var i = 0; i < clicked_array.length; i++){
+    clicked_array[i]=false;
+      document.getElementById(id_array[i]).style.color = "#000000";
+      document.getElementById(id_array[i]).style.background = "#cab2de";
+  }
     clicked_array[number] = true;
     document.getElementById(id).style.color = "#ffffff";
     document.getElementById(id).style.background = "#291639";
@@ -315,39 +338,39 @@ function clicked(number) {
 function check() {
   var nothing = true;
   for  (var i = 0; i < clicked_array.length; i++){
-	if (clicked_array[i] === true){
-	  nothing = false;
+  if (clicked_array[i] === true){
+    nothing = false;
     }
   }
   if (nothing){
-	alert("Klikni na jednu ze situacích v nabídce. ");
+  alert("Klikni na jednu ze situacích v nabídce. ");
   }
   else {
-		  var master =[];
-		if(clicked_array[0] === true){
-			master = [true, false, true, false, true, false, true, false];
-		}
-		if(clicked_array[1] === true){
-			master = [true, false, false, true, true, false, true, false];
-		}
-		if(clicked_array[2] === true){
-			master = [false, true, true, false, false, true, false, true];
-		}
-		var error = false;
-		console.log(document.getElementById("deterministic").checked);
-	  for (var i = 0; i < properties_array.length; i++){
-			var value = document.getElementById(properties_array[i]).checked;
-			if (value !== master[i]){
-				error = true;
-			}
-		}
+      var master =[];
+    if(clicked_array[0] === true){
+      master = [true, false, true, false, true, false, true, false];
+    }
+    if(clicked_array[1] === true){
+      master = [true, false, false, true, true, false, true, false];
+    }
+    if(clicked_array[2] === true){
+      master = [false, true, true, false, false, true, false, true];
+    }
+    var error = false;
+    console.log(document.getElementById("deterministic").checked);
+    for (var i = 0; i < properties_array.length; i++){
+      var value = document.getElementById(properties_array[i]).checked;
+      if (value !== master[i]){
+        error = true;
+      }
+    }
 
-		if (error){
-			alert("Tvé řešení je špatně");
-		}
-		else{
-			alert("Tvé řešení je správně!");			
-		}
+    if (error){
+      alert("Tvé řešení je špatně");
+    }
+    else{
+      alert("Tvé řešení je správně!");      
+    }
 
 
   }

@@ -53,6 +53,11 @@ ul {
 	list-style-type: square;
 }
 
+p {
+
+	text-align: justify;
+}
+
 button {
 	color: #000000;
 	background-color: #cab2de;
