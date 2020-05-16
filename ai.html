@@ -69,11 +69,11 @@
                 </ul>
               </p>
 
-              <p><strong>Plně pozorovatelné</strong> je takové prostředí, kde máme k dispozici úplnou informaci - žádná část není skryta. Například u hry šachy je prostředí plně pozorovatelné, protože máme kompletní přehled o situaci, vidíme celou hrací plochu i polohu všech figurek. Naopak v situaci, kdy nemáme úplnou informaci a část prostředí nevidíme, nazýváme jej <strong>částečně pozorovatelné</strong>. Příkladem částečně pozorovatelného prostředí je například bludiště, kdy agent vidí jen své přímé okolí, ale více ne.</p>
+              <p><strong>Plně pozorovatelné</strong> je takové prostředí, kde máme k&nbsp;dispozici úplnou informaci - žádná část není skryta. Například u&nbsp;hry šachy je prostředí plně pozorovatelné, protože máme kompletní přehled o&nbsp;situaci, vidíme celou hrací plochu i&nbsp;polohu všech figurek. Naopak v situaci, kdy nemáme úplnou informaci ačást prostředí nevidíme, nazýváme jej <strong>částečně pozorovatelné</strong>. Příkladem částečně pozorovatelného prostředí je například bludiště, kdy agent vidí jen své přímé okolí, ale více ne.</p>
 
               <p>Ve <strong>stochastickém</strong> prostředí se vyskytuje prvek náhody - například hrací kostka nebo hod mincí. Opakem je prostředí <strong>deterministické</strong>.</p>
 
-              <p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o poloze a letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s jedním jedincem, označujeme ho za <strong>singleagentní</strong>.
+              <p>V <strong>multiagentních</strong> prostředích máme více než jednoho jedince. Tyto agenti spolu komunikují, spolupracují nebo soupeří. Příkladem je TCAS (Traffic collision avoidance system). Systém pro redukci nebezpečí kolize letadel za letu. Jednotlivá letadla si posílají zprávy o&nbsp;poloze a&nbsp;letové výšce.Pokud by hrozila kolize, TCAS vyšle letadlům příkaz k výhybnému manévru. Pokud máme prostředí s&nbsp;jedním jedincem, označujeme ho za <strong>singleagentní</strong>.
 
               <br><br>
 
@@ -209,18 +209,13 @@
 
               <p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
 
-              <p>Například počátkem 90. let používala armáda USA program DART (Dynamic Analysis and Replanning Tool) k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.</p>
-
-
-              <p>Další materiály:</p>
-              <a href="dart.pdf">DART</a>
-
+              <p>Například počátkem 90. let používala armáda USA program <a href="dart.pdf" target="_blank">DART (Dynamic Analysis and Replanning Tool)</a> k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.</p>
 
               <hr>
 
               <br><br>
 
-              <h3 id="learning">Strojové učení</h3>
+              <h2 id="learning">Strojové učení</h2>
 
               <br>
 
@@ -242,11 +237,26 @@
               <p> <img src="img/hruska.svg" width="30%"alt="" /> Typ úkolu, kdy máme zařadit objekt do některé z daných kategorií, se nazývá <strong>klasifikace</strong>. V tomto případě máme jen dvě třídy, do kterých objekty klasifikujeme: jablka a hrušky. </p>
 
               <p>Tříd pro klasifikaci může být více. Například můžeme rozpoznávat ručně psané číslice. V tom případě máme kategorií 10 (od 0 do 9). Automatické rozpoznávání ručně psaných číslic se využívá při načítání částek na šeku nebo poštovních směrovacích čisel na obálkách.</p>
+                  <img src="img/post.svg" width="60%"alt="" class="aligncenter " />
 
               <p>Pro takový úkol je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků pro následné ohodnocení úspěšnosti našeho programů. Té druhé části se říká <strong>testovací data</strong>.</p>
 
-              <h3 id="types">Typy úkolů</h3>
+              <h3 id="nn">Neuronové sítě</h3>
+              <p>A jak se vlastně program může něco naučit? Tím se dostáváme ke známému pojmu: <strong>neuronové sítě</strong>. Když chceme vytvořit program, který natrénujeme na nějaký úkol, znamená to obvykle vytvoření neuronové sítě a netrénování té neuronové sítě. Taková síť je složená z uzlů (na obrázku růžové), jejichž fungování je inspirováno chováním neuronů. Mezi uzly jsou spoje (na obrázku černé). Přes neuronovou síť putují informace podobně jako se šírí vzruchy v mozku nebo centrální nervové soustavě. </p>
+                <img src="img/neurons.svg" width="100%"alt="" class="aligncenter " />
 
+              <p>Nejprve si představme, že máme neuronovou síť už natrénovanou a chceme pomocí ní určit, zda je na daném obrázku jablko nebo hruška. Taková síť má vstupní uzly, přes které se obrázek načte. Data putují přes neuronovou síť až k výstupním uzlům, které zodpoví, do které kategorie obrázek patří. Mezi vstupní a výstupní vrstvou mohou být tzv. skryté vrstvy (<strong>hidden layers</strong>).</p>
+
+              <p>Jak taková síť funguje zkusíme ukázat právě na jablkách a hruškách. Máme jeden <strong>vstupní uzel</strong>, ve kterém je zakódovaná informace o obrázku, který máme klasifikovat. Velmi zjednodušeně si to můžeme představit tak, že ve vstupním uzlu máme seznam čísel, kde první kóduje barvu objektu na obrázku, druhé značí velikost, třetí tvar, čtvrté přítomnost stopky atd.</p>
+
+              <p>Tento seznam pošleme přes spoje dalším neuronům. Každý spoj může původní seznam nějak modifikovat - například čísla něčím vynásobit a tak podobně. V neuronech ve skryté vrstvě nejprve sečteme všechny hodnoty, které přišly do daného uzlu přes spoje ze vstupní vrstvy a výsledek potom pošleme dále, do výstupní vrstvy. Ve <strong>skryté vrstvě</strong> můžeme omezit, jaké informace dál pošleme. Například můžeme dál poslat jen čísla, která budou větší než je nějaká hranice (<strong>threshold</strong>).</p>
+
+              <p>Nakonec v neuronech ve <strong>výstupní vrstvě</strong> opět sečteme čísla, co přišla po jednotlivých hranách a podle výsledku uvidíme, jak obrázek klasifikovat. V tomto případě nám může například jeden výstupní uzel ukazovat, jak moc to vypadá, že je na obrázku jablko a ten druhý zase značí, jak moc je objekt podobný hrušce. Vybráním maxima pak určíme, o které ovoce se jedná.</p>
+
+              <p>Při trénování neuronové sítě postupně vypočítáváme hodnoty, které se v neuronové síti vyskytují, jako například thresholdy. Na začátku můžeme hodnoty zvolit náhodně a pak je postupně upravujeme podle obrázků v trénovacích datech tak, aby jim síť co nejlépe odpovídala a tedy co nejlépe pak určovala neznámá data.</p>
+              <br>
+              <h3 id="types">Typy úkolů</h3>
+              <p>Kromě už výše popsané klasifikace můžeme řešit pomocí strojového učení a neuronových síti i další typy úkolů:</p>
               <ul>
                 <li><strong>Klasifikace</strong> - daný vstup máme zařadit do některé z určených tříd
                   <img src="img/classification.svg" width="100%"alt="" class="aligncenter " />
@@ -258,8 +268,24 @@
                   <img src="img/clustering.svg" width="100%"alt="" class="aligncenter " />
                 </li>
               </ul>
-
+              <br><br>
               <h3 id="use">Užití strojového učení</h3>
+              <br>
+              <p><strong>Rozpoznávání obrazu (image recognition):</strong> krom už výše zmíněného rozpoznávání psaných číslic se strojové učení používá například pro rozpoznávání poznávacích značek vozidel v parkovacích domech nebo při měření rychlosti. Další možnosti užití jsou například při autonomním řízení vozidel, kde se image recognition a <strong>object detection</strong> (detekce jednotlivých objektů) může použít při analýze situace v okolí vozidla. </p>
+
+              <p><strong>Rozpoznávání a generování řeči (Speech recognition and generation):</strong> podobně jako u obrázků i u zvuku lze použít strojové učení k rozpoznávání, co se vyskytuje v daném vzorku dat případně i generování nových vzorků.</p>
+
+              <p><strong>Strojový překlad (Neural machine translation):</strong> neuronové sitě a strojové učení se dnes běžně využívá pro automatické překládání textů. Úroveň vygenerovaného překladu je velmi dobrá.</p>
+
+              <p><strong>Hraní her:</strong> strojové učení se využívá při tvorbě programů pro hraní her. Známým příkladem je <a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank">AlphaGo</a> – program pro hraní deskové hry Go. V roce 2016 porazil AlphaGo jednoho z nejlepší světových hráčů v poměru 4:1.</p>
+              <br>
+                              <hr width="80%" >
+              <br><br>
+              <strong>Příklad: Object detection</strong>
+                <img src="img/object_detection.svg" width="100%"alt="" class="aligncenter " />
+
+                <br><br><br>
+
 
 
             </div>
@@ -279,7 +305,7 @@
 
             <li><h2>Obsah</h2>
               <ul>
-                <li><a href="#ai"><h4>Umělá inteligence</h4></a></li>
+                <li><strong><a href="#ai">Umělá inteligence</a></strong></li>
                 <ul>
                   <li><a href="#agents">Agenti a prostředí</a></li>
                   <li><a href="#problems">Řešení problémů</a></li>
@@ -287,9 +313,10 @@
                   <li><a href="#robotics">Robotika</a></li>
                   <li><a href="#planning">Plánování a rozvrhování</a></li>
                 </ul>
-                  <li><a href="#learning">Strojové učení</a></li>
+                  <li><strong><a href="#learning">Strojové učení</a></strong></li>
                 <ul>
                   <li><a href="#proccess">Proces strojového učení</a></li>
+                  <li><a href="#nn">Neuronové sítě</a></li>
                   <li><a href="#types">Typy úkolů</a></li>
                   <li><a href="#use">Užití v praxi</a></li>
                 </ul>
