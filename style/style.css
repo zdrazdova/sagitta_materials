@@ -10,6 +10,30 @@ body {
 	color: #291639;
 }
 
+/*Box*/
+* {
+    box-sizing: border-box;
+}
+
+.boxMain {
+    float: left;
+    width: 80%;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+.boxSide {
+    float: left;
+    width: 20%;
+    padding-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
@@ -66,6 +90,18 @@ button {
     	border-radius: 6px;
 	font-family: Titillium Web;
 	font-weight: normal;
+	
+}
+
+.button1 {
+	color: #ffffff;
+	background-color: #ff0052;
+	padding: 10px;
+	border: none;
+    	border-radius: 6px;
+	font-family: Titillium Web;
+	font-weight: bold;
+	border: 4px solid #c2003e;
 	
 }
 
@@ -160,6 +196,45 @@ img.aligncenter {
 	color: #FFFFFF;
 }
 
+
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 10px;
+    border-radius: 6px;
+    width: 60%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* Search */
 
 #search {
@@ -198,7 +273,7 @@ img.aligncenter {
 /* Menu */
 
 #menu {
-	width: 940px;
+	width: 1040px;
 	height: 50px;
 	margin: 0px auto;
 	padding: 20px 20px 0px 20px;
@@ -246,7 +321,7 @@ img.aligncenter {
 /* Page */
 
 #page {
-	width: 1080px;
+	width: 1180px;
 	margin: 0 auto;
 	padding: 0;
 	background: #FFFFFF ;
@@ -276,7 +351,7 @@ img.aligncenter {
 
 #content {
 	float: right;
-	width: 700px;
+	width: 1080px;
 	padding: 0px 0px 0px 0px;
 }
 
