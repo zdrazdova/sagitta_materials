@@ -182,10 +182,21 @@
 
               <h3 id="robotics">Robotika</h3>
 
+                      </div>
+            <div class="boxMain" style="background-color:none">
+       
+
               <p>Robotika je obor, který nejlépe poznáš, když si robota zkusíš postavit a naprogramovat. Existují stavebnice např. LEGO Mindstorms, které jsou určené právě pro výuku základů robotiky. Díky nim si můžeš postavit a naprogramovat robota během několika málo hodin. Pomocí robotů ze stavebnic LEGO Mindstorms <a href="https://lego.zcu.cz/web/moduly-systemu-lego-nxt"target="_blank"> NXT2 </a> nebo <a href="https://education.lego.com/en-us/support/mindstorms-ev3/getting-started"target="_blank"> EV3 </a> můžeš řešit jednoduché problémy jako najít cestu z bludiště nebo sledovat barevnou čáru na zemi.</p>
 
               <p>Pro složitější úkoly je dobré použít k řízení robota například <a href="https://www.arduino.cc/en/Guide/Introduction"target="_blank"> Arduino </a> nebo <a href="https://www.raspberrypi.org/"target="_blank"> Raspberry Pi </a> a k nim si pořídit vhodné motory, senzory a další součástky.</p>
-
+</div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+              <button id="RSBtn"  class="button1" >Robotické soutěže</button>
+                <div id="RSModal" class="modal">  
+                    <div class="modal-content">
+                        <span id="RSclose" class="close">&times;</span>
+                        <h3>Robotické soutěže</h3>
+                        <br>
               <p>Doporučujeme vyzkoušet některou robotickou soutěž pro žáky ZŠ nebo studenty SŠ. Pokud nemáš doma nebo ve škole žádnou robotickou stavebnici, doporučujeme vyzkoušet Robosoutěž na ČVUT, kde je možné si stavebnici zapůjčit. </p>
 
               <p><strong>Soutěže:</strong></p>
@@ -196,19 +207,45 @@
                 <li><a href="http://www.firstlegoleague.cz/" target="_blank">FIRST LEGO league </a></li>
                 <li><a href="https://robotika.cz/competitions/cs" target="_blank">Seznam dalších soutěží </a></li>
                </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="boxMain" style="background-color:none">
+            
+
+
 
                <br><br>
 
               <h3 id="planning">Plánování a rozvrhování</h3>
+
+            </div>
+            <div class="boxMain" style="background-color:none">
               <p>V plánovacích problémech máme popsaný nějaký výchozí stav, ve kterém se nacházíme, a cíl, kterého chceme dosáhnout. K tomu máme seznam možných akcí, které můžeme provést. </p>
 
-              <p>Nejjednodušší příklad je tzv. Block world - svět kostek: Máme na stole několik kostek. Každou kostku, na které není jiná kostka, můžeme vzít a buď přesunout na stůl nebo na jinou kostku. </p>
+              <p>Nejjednodušší příklad je tzv. Block world - svět kostek: Máme na stole několik kostek. Každou kostku, na které není jiná kostka, můžeme vzít a buď přesunout na stůl nebo na jinou kostku. V plánování je naším cílem sestavit posloupnost akcí, která povede z výchozího stavu do cílového. K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
 
-              <p>Na začátku máme nějaký výchozí stav: kostka A je na kostce B a ta je na kostce C. Cílem je kostky přeskládat tak, aby A byla na C a ta na B. </p>
 
-              <p>Povolené akce jsou <strong>zvednout kostku</strong>, <strong>položit kostku na stůl</strong> a <strong>položit kostku na jinou kostku</strong>.</p>
+              <p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
 
-              <p>V plánování je naším cílem sestavit posloupnost akcí, která povede z výchozího stavu do cílového. V tomto případě je tedy řešení například:</p>
+              <p>Navíc můžeme zadat systému informace o zdrojích, které mám k dispozici. Takové zdroje jsou například počty personálu, který může na letadle pracovat při jedné směně, náklady na jednotlivé úkony nebo třeba časová omezení. Program pak vytvoří řešení, které bude nejen funkční, ale také ekonomicky a časově úsporné. </p>
+
+              <p>Této druhé části se říká <strong>rozvrhování</strong>. Je to obor, který se zabývá právě efektivním přiřazování zdrojů, když už máme vytvořený plán. </p>
+
+              <p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
+            </div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+              <h3>Příklad: </h3>
+                <p>Na začátku máme výchozí stav: kostka A je na kostce B a ta je na kostce C. Cílem je kostky přeskládat tak, aby A byla na C a ta na B. </p>
+                <img src="img/kostky_simple.svg" width="100%"alt="" class="aligncenter " />
+                <p>Povolené akce jsou <strong>zvednout kostku</strong>, <strong>položit kostku na stůl</strong> a <strong>položit kostku na jinou kostku</strong>.</p>
+
+              <button id="PPBtn"  class="button1" >Řešení problému</button>
+                <div id="PPModal" class="modal">  
+                  <div class="modal-content">
+                    <span id="PPclose" class="close">&times;</span>
+                    <h3>Řešení plánovacího problému</h3>
+                    <br>
               <ul>
                 <li>Zvedni kostku A</li>
                 <li>Polož kostku A na stůl</li>
@@ -221,18 +258,13 @@
               </ul>
 
               <img src="img/kostky.svg" width="100%"alt="" class="aligncenter " />
+                    </div>
+                </div>
+            </div>
+            <div class="boxMain" style="background-color:none">
+              
 
-              <p>K řešení problému můžeme napsat počítačový program, který posloupnost akcí sestaví.</p>
-
-              <p>Možná si říkáte, proč na něco takového psát počítačový program, vždyť na tohle by asi přišlo i batole. V reálu se řeší mnohem složitější problémy - představte si místo dřevěných kostek třeba součástky pro výrobu letadel. Při konstrukci každého letadla je třeba postupně provést stovky nebo tisíce úkonů. Počítačový program dokáže vytvořit správnou sekvenci akcí, která povede k sestavení letadla velmi rychle. </p>
-
-              <p>Navíc můžeme zadat systému informace o zdrojích, které mám k dispozici. Takové zdroje jsou například počty personálu, který může na letadle pracovat při jedné směně, náklady na jednotlivé úkony nebo třeba časová omezení. Program pak vytvoří řešení, které bude nejen funkční, ale také ekonomicky a časově úsporné. </p>
-
-              <p>Této druhé části se říká rozvrhování. Je to obor, který se zabývá právě efektivním přiřazování zdrojů, když už máme vytvořený plán. </p>
-
-              <p>Počítačové programy dnes umějí vytvořit plány a rozvrhy za zlomek času a tím pádem i nákladů, než kdyby je vytvářel tým lidí. Navíc díky optimalizovaným rozvrhům je možné ušetřit mnoho dalších nákladů.</p>
-
-              <p>Například počátkem 90. let používala armáda USA program <a href="dart.pdf" target="_blank">DART (Dynamic Analysis and Replanning Tool)</a> k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.</p>
+              <p>Například počátkem 90. let používala armáda USA program <a href="materials/dart.pdf" target="_blank">DART (Dynamic Analysis and Replanning Tool)</a> k plánování transportu zásob a personálu po světě. Díky tomu ušetřila miliony dolarů, které byly investovány do vývoje umělé inteligence.</p>
 
               <hr>
             </div>
@@ -243,16 +275,16 @@
 
               <br>
 
-              <p>Strojové učení je obor, kde učíme programy plnit různé úkoly jako například překládat text z angličtiny do češtiny, rozpoznávat, co je na daném obrázku, hrát různé hry a mnoho dalšího. </p>
-
             </div>
             <div class="boxMain" style="background-color:none">
+              <p>Strojové učení je obor, kde učíme programy plnit různé úkoly jako například překládat text z angličtiny do češtiny, rozpoznávat, co je na daném obrázku, hrát různé hry a mnoho dalšího. </p>
+
 
               <p id="proccess">Zjednodušená myšlenka je taková, že programu předložíme velké množství správných dat pro daný úkol. Program si tato data projde a naučí se z nich, jak úkol plnit. Tomuto procesu se říká <strong>trénování</strong>. Například pokud chceme, aby program rozpoznával, zda je na obrázku jablko nebo hruška, dáme mu nejprve stovky nebo tisíce obrázků, na kterých bude vždy jablko nebo hruška a k tomu bude příslušný popisek, kterému se říká <strong>label</strong>. Obrázky budou různé, mohou tam být různé odrůdy jablek, některé kusy budou větší, některé menší, některé pootočené či nějak převrácené.</p>
 </div>
 
             <div class="boxSide" style="background-color:none"> 
-                                <strong><a href="#learning">Strojové učení</a></strong>
+                          <h2>Obsah</h2>
                 <ul>
                   <li><a href="#proccess">Proces strojového učení</a></li>
                   <li><a href="#nn">Neuronové sítě</a></li>
@@ -260,33 +292,14 @@
                   <li><a href="#use">Užití v praxi</a></li>
                 </ul>
               <br><br>
-                <button id="DLBtn"  class="button1" >Hluboké učení</button>
-                <div id="DLModal" class="modal">  
-                    <div class="modal-content">
-                        <span id="DLclose" class="close">&times;</span>
-                        <h3>Hluboké učení</h3>
-                    </div>
-                </div>  
-              <button id="RLBtn"  class="button1" >Zpětnovazební učení</button>
-                <div id="RLModal" class="modal">  
-                    <div class="modal-content">
-                        <span id="RLclose" class="close">&times;</span>
-                        <h3>Zpětnovazební učení</h3>
-                    </div>
-                </div>        
+      
             </div>
             <div class="boxMain" style="background-color:none">
               <p>Těmto podkladům se říká <strong>trénovací data</strong>. Důležité je, aby těchno dat bylo hodně. Program se z nich naučí poznat rozdíl mezi jablky a hruškami. Když poté program dostane nějaký obrázek, bude schopen určit, jestli je na něm jablko nebo hruška, i když předtím tento konkrétní obrázek ještě nidky neviděl. </p>
 </div>
 
             <div class="boxSide" style="background-color:none">
-              <button id="OFBtn"  class="button1" >Overfitting</button>
-                <div id="OFModal" class="modal">  
-                    <div class="modal-content">
-                        <span id="OFclose" class="close">&times;</span>
-                        <h3>Overfitting</h3>
-                    </div>
-                </div>
+
             </div>
             <div class="boxMain" style="background-color:none">
 
@@ -295,56 +308,132 @@
               <strong>Trénovací data:</strong>
 
               <img src="img/train_data.svg" width="100%"alt="" class="aligncenter " />
-              <br><br>
+              <br><br><br>
               <strong>Obrázek:</strong>
-              <br>
-              <img src="img/hruska.svg" width="30%" />
-              <p> Typ úkolu, kdy máme zařadit objekt do některé z daných kategorií, se nazývá <strong>klasifikace</strong>. V tomto případě máme jen dvě třídy, do kterých objekty klasifikujeme: jablka a hrušky. </p>
+              <br>              
             </div>
             <div class="boxMain" style="background-color:none">
-              <p>Tříd pro klasifikaci může být více. Například můžeme rozpoznávat ručně psané číslice. V tom případě máme kategorií 10 (od 0 do 9). Automatické rozpoznávání ručně psaných číslic se využívá např. při načítání částky na šeku nebo poštovního směrovacího čisla na obálce.</p>
-                  <img src="img/post.svg" width="60%"alt="" align="center" />
-              <br><br>
 
-              <p>Možná si teď říkáš, jak se vlastně hodnotí kvalita programu. Vždyť často nemůžeme přečíst po sobě vlastní písmo natož pak cizí. Tak jak určíme, jestli to program dělá dobře nebo špatně? </p>
-
-              <p>Pro takový úkol jako je rozpoznávání ručně psaných číslic je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků nazývaných <strong>testovací data</strong>, která slouží pro následné ohodnocení úspěšnosti našeho programů. </p>
+              <img src="img/hruska.svg" width="30%" align="left" style="margin-right:50px"//>
+              <br>
+              <p> Typ úkolu, kdy máme zařadit objekt do některé z daných kategorií, se nazývá <strong>klasifikace</strong>. V tomto případě máme jen dvě třídy, do kterých objekty klasifikujeme: jablka a hrušky. </p>
+              <p>Kromě trénovacích dat potřebujeme ještě <strong>testovací data</strong>, na kterých vyzkoušíme, jak dobře program pracuje.</p>
             </div>
             <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
-              <button id="DSBtn"  class="button1" >Datasets</button>
-                <div id="DSModal" class="modal">  
+              <br>
+
+              <button id="KPBtn"  class="button1" >Kvalita programu</button>
+                <div id="KPModal" class="modal">  
                     <div class="modal-content">
-                        <span id="DSclose" class="close">&times;</span>
-                        <h3>Datasety</h3>
+                        <span id="KPclose" class="close">&times;</span>
+                        <h3>Kvalita programu</h3>
+                        <br>
+                        <p>Pro takový úkol jako je rozpoznávání ručně psaných číslic je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků nazývaných <strong>testovací data</strong>, která slouží pro následné ohodnocení úspěšnosti našeho programů. </p>
+                    </div>
+                </div>
+                <br><br>
+                <button id="OFBtn"  class="button1" >Overfitting</button>
+                <div id="OFModal" class="modal">  
+                    <div class="modal-content">
+                        <span id="OFclose" class="close">&times;</span>
+                        <h3>Overfitting</h3>
+                        <br>
+                        <p>Pokud nemáme dostatek různorodých trénovacích dat, může se nám stát, že nebudeme umět nová, dosud neviděná data klasifikovat správně. Například pokud bychom měli trénovací obrázky, na kterách bude lístek na stopce pouze u hrušek, bude hrozit, že se program naučí ovoce s lístkem klasifikovat vždy jako hrušku i když to bude jablko. </p>
+                        <p>Situaci, kdy je program příliš naučený na daná trénovací data a není dost dobře použitelný v obecných případech nazýváme přeučování nebo overfitting.</p>
                     </div>
                 </div>
             </div>
             <div class="boxMain" style="background-color:none">
+              <img src="img/post.svg" width="50%"alt="" align="right" style="margin-left:50px"/>
+              <br><br>
+              <p>Tříd pro klasifikaci může být více. Například můžeme rozpoznávat ručně psané číslice. V tom případě máme kategorií 10 (od 0 do 9). Automatické rozpoznávání ručně psaných číslic se využívá např. při načítání částky na šeku nebo poštovního směrovacího čisla na obálce.</p>
+              <br><br>
+            </div>
+                        <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+
+              <button id="DSBtn"  class="button1" >Datasety</button>
+                <div id="DSModal" class="modal">  
+                    <div class="modal-content">
+                        <span id="DSclose" class="close">&times;</span>
+                        <h3>Datasety</h3>
+                        <br>
+                        <p>Pro takový úkol jako je rozpoznávání ručně psaných číslic je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků nazývaných <strong>testovací data</strong>, která slouží pro následné ohodnocení úspěšnosti našeho programů. </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="boxMain" style="background-color:none">
+
+             <hr>
+             <br>
               <h3 id="nn">Neuronové sítě</h3>
+              <br>
+              
+            </div>
+
+            <div class="boxMain" style="background-color:none">
               <p>A jak se vlastně program může něco naučit? Tím se dostáváme ke známému pojmu: <strong>neuronové sítě</strong>. Když chceme vytvořit program, který natrénujeme na nějaký úkol, znamená to obvykle vytvoření neuronové sítě a natrénování neuronové sítě. Taková síť je složená z uzlů (na obrázku růžové), jejichž fungování je inspirováno chováním neuronů. Mezi uzly jsou spoje (na obrázku černé). Přes neuronovou síť putují informace podobně jako se šírí vzruchy v mozku nebo centrální nervové soustavě. </p>
               <br>
                 <img src="img/neurons.svg" width="100%"alt="" class="aligncenter " />
               <br>
             </div>
             <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+             <img src="img/neuron_simple.svg" width="100%"alt="" class="aligncenter " />
+             <br><br><br>
               <button id="NBtn"  class="button1" >Neurony</button>
                 <div id="NModal" class="modal">  
                     <div class="modal-content">
                         <span id="Nclose" class="close">&times;</span>
                         <h3>Neurony</h3>
+                        <br>
+                        <p>Neurony neboli nervové buňky zpracovávají podněty od ostatních neuronů a posílají elektrické vzruchy dál. Každý neuron má nějaký aktivační práh. Aby přes něj informace mohla přejít dál, musí daný vzruch překročit aktivační potenciál neuronu. </p>
+                        <p>Strukturu neuronu tvoří jádro (<strong>nucleus</strong>) a dva typy výběžků: kratší <strong>dendrity</strong> a delší <strong>axon</strong>. Síla neuronů spočívá v jejich velkém množství a vzájemné spolupráci, která probíhá právě přes neuronové výběžky. </p>
+                        <br><br>
+                        <img src="img/neuron.svg" width="100%"alt="" class="aligncenter " />
+
                     </div>
-                </div>              </div>
+                </div>              
+              </div>
             <div class="boxMain" style="background-color:none">
               <p>Nejprve si představme, že máme neuronovou síť už natrénovanou a chceme pomocí ní určit, zda je na daném obrázku jablko nebo hruška. Taková síť má vstupní uzly, přes které se obrázek načte. Data putují přes neuronovou síť až k výstupním uzlům, které zodpoví, do které kategorie obrázek patří. Mezi vstupní a výstupní vrstvou mohou být tzv. skryté vrstvy (<strong>hidden layers</strong>).</p>
-
+</div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+                <button id="DLBtn"  class="button1" >Hluboké učení</button>
+                <div id="DLModal" class="modal">  
+                    <div class="modal-content">
+                        <span id="DLclose" class="close">&times;</span>
+                        <h3>Hluboké učení</h3>
+                    </div>
+                </div> 
+                </div>
+            <div class="boxMain" style="background-color:none">
+           
               <p>Jak taková síť funguje zkusíme ukázat právě na jablkách a hruškách. Máme jeden <strong>vstupní uzel</strong>, ve kterém je zakódovaná informace o obrázku, který máme klasifikovat. Velmi zjednodušeně si to můžeme představit tak, že ve vstupním uzlu máme seznam čísel, kde první kóduje barvu objektu na obrázku, druhé značí velikost, třetí tvar, čtvrté přítomnost stopky atd.</p>
+</div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+                  <img src="img/neurons1.svg" width="30%"alt="" class="aligncenter " />
 
+                </div>
+            <div class="boxMain" style="background-color:none">
+           
               <p>Tento seznam pošleme přes spoje dalším neuronům. Každý spoj může původní seznam nějak modifikovat - například čísla něčím vynásobit a tak podobně. V neuronech ve skryté vrstvě nejprve sečteme všechny hodnoty, které přišly do daného uzlu přes spoje ze vstupní vrstvy a výsledek potom pošleme dále, do výstupní vrstvy. Ve <strong>skryté vrstvě</strong> můžeme omezit, jaké informace dál pošleme. Například můžeme dál poslat jen čísla, která budou větší než je nějaká hranice (<strong>threshold</strong>).</p>
+</div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+                  <img src="img/neurons2.svg" width="40%"alt="" class="aligncenter " />
 
+               </div>
+            <div class="boxMain" style="background-color:none">
+            
               <p>Nakonec v neuronech ve <strong>výstupní vrstvě</strong> opět sečteme čísla, co přišla po jednotlivých hranách a podle jejich výsledku uvidíme, jak obrázek klasifikovat. V tomto případě nám může například jeden výstupní uzel ukazovat, jak moc to vypadá, že je na obrázku jablko a ten druhý zase značí, jak moc je objekt podobný hrušce. Vybráním maxima pak určíme, o které ovoce se jedná.</p>
-
               <p>Při trénování neuronové sítě postupně vypočítáváme hodnoty, které se v neuronové síti vyskytují, jako například thresholdy. Na začátku můžeme hodnoty zvolit náhodně a pak je postupně upravujeme podle obrázků v trénovacích datech tak, aby jim síť co nejlépe odpovídala a tedy co nejlépe pak určovala neznámá data.</p>
-              <br>
+              <br>              
+</div>
+            <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
+                  <img src="img/neurons3.svg" width="27%"alt="" class="aligncenter " />
+
+               </div>
+            <div class="boxMain" style="background-color:none">
+            
+
               <h3 id="types">Typy úkolů</h3>
               <p>Kromě už výše popsané klasifikace můžeme řešit pomocí strojového učení a neuronových síti i další typy úkolů:</p>
               <ul>
@@ -375,6 +464,10 @@
                 <img src="img/object_detection.svg" width="100%"alt="" class="aligncenter " />
 
                 <br><br><br>
+
+            </div>
+            <div class="boxMain" style="background-color:none">
+ 
               <h3>Opakování základních pojmů</h3>
               <br>
 
@@ -452,7 +545,27 @@
 
                 <button onclick="check2()" style="float: right; background-color:#ff0052; color:#ffffff">Vyhodnoť</button> <br><br>
               </div>
-
+               </div>
+            <div class="boxSide" style="background-color:none">
+              <h3>Slovníček</h3>
+              <br>
+                <p><strong>Machine learning</strong> - Strojové učení</p>
+                <p><strong>Train data</strong> - Trénovací data</p>
+                <p><strong>Test data</strong> - Testovací data</li>
+                <p><strong>Label</strong> - Značka/Popisek</li>
+                <p><strong>Overfitting</strong> - Přeučení</li>
+                <p><strong>Neural network</strong> - Neuronová síť</p>
+                <p><strong>Deep learning</strong> - Hluboké učení</p>
+                <p><strong>Input layer</strong> - Vstupní vrstva </p>
+                <p><strong>Hidden layer</strong> - Skrytá vrstva </p>
+                <p><strong>Output layer</strong> - Výstupní vrstva </p>
+                <p><strong>Threshold</strong> - Práh/Hranice</p>
+                <p><strong>Classification</strong> - Klasifikace</p>
+                <p><strong>Regression</strong> - Regrese</p>
+                <p><strong>Clustering</strong> - Shlukování</p>
+                <p><strong>Image recognition</strong> - Rozpoznávání obrázků</p>
+                <p><strong>Speech recognition</strong> - Rozpoznávání řeči</p>
+                <p><strong>Machine translation</strong> - Strojový překlad</p>
               </div>
 
             </div>
@@ -560,16 +673,26 @@ var properties_array_ML = ["test_data1","test_data2", "test_data3", "classificat
 
   }
 
-
-      var RLmodal = document.getElementById("RLModal");
-      var RLbtn = document.getElementById("RLBtn");
-      RLbtn.onclick = function() {
-        RLmodal.style.display = "block";
+      var PPmodal = document.getElementById("PPModal");
+      var PPbtn = document.getElementById("PPBtn");
+      PPbtn.onclick = function() {
+        PPmodal.style.display = "block";
       }
 
-      var RLclose = document.getElementById("RLclose");
-      RLclose.onclick = function() {
-        RLmodal.style.display = "none";
+      var PPclose = document.getElementById("PPclose");
+      PPclose.onclick = function() {
+        PPmodal.style.display = "none";
+      }
+
+      var RSmodal = document.getElementById("RSModal");
+      var RSbtn = document.getElementById("RSBtn");
+      RSbtn.onclick = function() {
+        RSmodal.style.display = "block";
+      }
+
+      var RSclose = document.getElementById("RSclose");
+      RSclose.onclick = function() {
+        RSmodal.style.display = "none";
       }
 
       var OFmodal = document.getElementById("OFModal");
@@ -583,6 +706,17 @@ var properties_array_ML = ["test_data1","test_data2", "test_data3", "classificat
         OFmodal.style.display = "none";
       }
 
+
+      var KPmodal = document.getElementById("KPModal");
+      var KPbtn = document.getElementById("KPBtn");
+      KPbtn.onclick = function() {
+        KPmodal.style.display = "block";
+      }
+
+      var KPclose = document.getElementById("KPclose");
+      KPclose.onclick = function() {
+        KPmodal.style.display = "none";
+      }
       var DSmodal = document.getElementById("DSModal");
       var DSbtn = document.getElementById("DSBtn");
       DSbtn.onclick = function() {
@@ -620,17 +754,23 @@ var properties_array_ML = ["test_data1","test_data2", "test_data3", "classificat
 
             //Když se klikne mimo otevřené okno, zavře se
       window.onclick = function(event) {
+        if (event.target == RSmodal) {
+          RSmodal.style.display = "none";
+        }
+        if (event.target == PPmodal) {
+          PPmodal.style.display = "none";
+        }
         if (event.target == OFmodal) {
           OFmodal.style.display = "none";
+        }
+        if (event.target == KPmodal) {
+          KPmodal.style.display = "none";
         }
         if (event.target == DSmodal) {
           DSmodal.style.display = "none";
         }
         if (event.target == DLmodal) {
           DLmodal.style.display = "none";
-        }
-        if (event.target == RLmodal) {
-          RLmodal.style.display = "none";
         }
         if (event.target == Nmodal) {
           Nmodal.style.display = "none";
