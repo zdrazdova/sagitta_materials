@@ -322,7 +322,7 @@
             <div class="boxSide" style="background-color:none;padding-left: 20px;">  <!--  begin Side -->
               <br>
 
-              <button id="KPBtn"  class="button1" >Kvalita programu</button>
+              <!--<button id="KPBtn"  class="button1" >Kvalita programu</button>
                 <div id="KPModal" class="modal">  
                     <div class="modal-content">
                         <span id="KPclose" class="close">&times;</span>
@@ -330,7 +330,7 @@
                         <br>
                         <p>Pro takový úkol jako je rozpoznávání ručně psaných číslic je třeba mít hodně trénovacích dat. Potřebujeme mnoho vzorků psaného textu od různých lidí, abychom náš program natrénovali na spolehlivé rozpoznávání číslic. Navíc potřebujeme mít k jednotlivým vzorkům i popisky, o kterou číslici se jedná. Sesbírat tato data bývá časově i finančně náročné. Proto se při výuce i výzkumu často používají už existující sady dat. Sadě trénovacích dat s popisky se říká <strong>dataset</strong>. Například pro rozpoznávání ručně psaných číslic existuje dataset <a href="https://en.wikipedia.org/wiki/MNIST_database"target="_blank">MNIST</a>. Ten obsahuje 60 000 vzorků pro trénování programů a 10 000 vzorků nazývaných <strong>testovací data</strong>, která slouží pro následné ohodnocení úspěšnosti našeho programů. </p>
                     </div>
-                </div>
+                </div>-->
                 <br><br>
                 <button id="OFBtn"  class="button1" >Overfitting</button>
                 <div id="OFModal" class="modal">  
@@ -402,6 +402,10 @@
                     <div class="modal-content">
                         <span id="DLclose" class="close">&times;</span>
                         <h3>Hluboké učení</h3>
+                        <br>
+                        <p>Hloubka modelu je počet jeho vrstev. Hluboké učení neboli <strong>Deep learning</strong> je podobor Strojového učení, kde se pracuje s modely, které mají mnoho vrstev.</p>
+
+                        <p>Více vrstev umožňuje natrénovat model na složitější úkoly. Deep learning se tam využívá v mnoha různých oborech. Nevýhodou hlubokých modelů je velká výpočetní náročnost.</p>
                     </div>
                 </div> 
                 </div>
@@ -706,17 +710,6 @@ var properties_array_ML = ["test_data1","test_data2", "test_data3", "classificat
         OFmodal.style.display = "none";
       }
 
-
-      var KPmodal = document.getElementById("KPModal");
-      var KPbtn = document.getElementById("KPBtn");
-      KPbtn.onclick = function() {
-        KPmodal.style.display = "block";
-      }
-
-      var KPclose = document.getElementById("KPclose");
-      KPclose.onclick = function() {
-        KPmodal.style.display = "none";
-      }
       var DSmodal = document.getElementById("DSModal");
       var DSbtn = document.getElementById("DSBtn");
       DSbtn.onclick = function() {
