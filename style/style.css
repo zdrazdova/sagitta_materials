@@ -355,6 +355,12 @@ img.aligncenter {
 	padding: 0px 0px 0px 0px;
 }
 
+#content2 {
+	float: right;
+	width: 800px;
+	padding: 0px 0px 0px 0px;
+}
+
 .post {
 	clear: both;
 	padding-bottom: 10px;
