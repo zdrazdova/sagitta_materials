@@ -273,7 +273,8 @@ img.aligncenter {
 /* Menu */
 
 #menu {
-	width: 1040px;
+	width: 100%;
+	max-width: 1180px;
 	height: 80px;
 	margin: 0px auto;
 	padding: 20px 20px 0px 20px;
@@ -321,7 +322,8 @@ img.aligncenter {
 /* Page */
 
 #page {
-	width: 1180px;
+	width: 100%;
+	max-width: 1180px;
 	margin: 0 auto;
 	padding: 0;
 	background: #FFFFFF ;
@@ -351,13 +353,13 @@ img.aligncenter {
 
 #content {
 	float: right;
-	width: 1080px;
+	width: 100%;
 	padding: 0px 0px 0px 0px;
 }
 
 #content2 {
 	float: right;
-	width: 800px;
+	width: 71%;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -414,7 +416,7 @@ img.aligncenter {
 
 #sidebar {
 	float: left;
-	width: 260px;
+	width: 24%;
 	padding: 0px 0px 0px 0px;
   background: url(imgages/logo4.png)  no-repeat left bottom;
 }
@@ -497,7 +499,7 @@ img.aligncenter {
 /* Footer */
 
 #footer {
-	width: 960px;
+	max-width: 960px;
 	height: 55px;
 	margin: 100px 100px 40px 300px;
 	font-family: century gothic, Helvetica, sans-serif;
