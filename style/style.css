@@ -274,7 +274,7 @@ img.aligncenter {
 
 #menu {
 	width: 1040px;
-	height: 50px;
+	height: 80px;
 	margin: 0px auto;
 	padding: 20px 20px 0px 20px;
 	background: #291639;
@@ -595,6 +595,69 @@ strong {
   display: block;
 }
 
+
+/* Ăšprava pro zaĹ™Ă­zenĂ­ s ĹˇirokĂ˝m displayem */
+@media only screen and (min-width: 1800px) {
+    .modal-content {
+        width: 40%; 
+    }
+}
+
+/* Ăšprava pro zaĹ™Ă­zenĂ­ s ĂşzkĂ˝m displayem */
+@media only screen and (max-width: 1330px) {
+    .darkWide {
+        display: block;
+    }
+    .dark {
+        display: none;
+    }
+}
+
+/* Ăšprava pro zaĹ™Ă­zenĂ­ s ĂşzkĂ˝m displayem */
+@media only screen and (max-width: 850px) {
+    .urgentButton {
+        font-size: 20px;
+        color: white;
+    }
+
+    
+    body {
+        margin-left: 0%;    
+    }
+    
+    p {
+        width: 90%;
+    }
+    .modal-content {
+        width: 90%; 
+    }
+    .boxMain {
+        width: 100%;
+    	  padding-right: 10px;
+    }    
+    .boxSide {
+        width: 100%;
+    	padding-right: 10px;
+    }    
+    .darkWide {
+        display: none;
+    }
+    .light {
+        display: block;
+    }
+    .headline {
+        width:80%;
+        margin-left:10%;
+    }
+    .popupSmall {
+        width:80%;
+        margin-left:10%;
+    }
+    .inTextSmall {
+        width:80%;
+        margin-left:10%;
+    }
+}
 
 
  
