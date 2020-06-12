@@ -466,57 +466,57 @@
               <h3>Opakování základních pojmů</h3>
               <br>
 
-              <div id="block">
+              <div id="block" class="questions2">
                 <p><b>Vyber správné významy pojmů ze strojového učení:</b></p>
 
 
                 <strong>Testovací data</strong><br><br>
                 <label class="container">
                   <input type="radio" id="test_data1" name="test_data" value="test_data1">
-                  Množina dat, na kterých se program naučí plnit danou úlohu.
+                  <span>Množina dat, na kterých se program naučí plnit danou úlohu.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                 <label class="container">
                   <input type="radio" id="test_data2" name="test_data" value="test_data2">
-                  Data, na kterých se testuje úspěšnost programu.  
+                  <span>Data, na kterých se testuje úspěšnost programu.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                 <label class="container">
                   <input type="radio" id="test_data3" name="test_data" value="test_data3">
-                  Velká sada dat s popisky, která se používá pro porovnání různých programů.  
+                  <span>Velká sada dat s popisky, která se používá pro porovnání různých programů.</span>
                   <span class="checkmark"></span>
                 </label> <br><br>
                 <strong>Klasifikace</strong><br><br>
                   <label class="container">
                   <input type="radio" id="classification1" name="classification" value="classification1">
-                  Typ úlohy strojového učení kde se vzorky přiřazují do tříd.  
+                  <span>Typ úlohy strojového učení kde se vzorky přiřazují do tříd.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                   <label class="container">
                   <input type="radio" id="classification2" name="classification" value="classification2">
-                  Hodnocení kvality neuronové sítě přiřazením známky.  
+                  <span>Hodnocení kvality neuronové sítě přiřazením známky.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                   <label class="container">
                   <input type="radio" id="classification3" name="classification" value="classification3">
-                  Problém seskupení podobných dat.  
+                  <span>Problém seskupení podobných dat.</span>
                   <span class="checkmark"></span>
                 </label> <br><br>
 
                 <strong>Overfitting</strong><br><br>
                   <label class="container">
                   <input type="radio" id="overfitting1" name="overfitting" value="overfitting1">
-                  Používání sítě s mnoha skrytými vrstvami.  
+                  <span>Používání sítě s mnoha skrytými vrstvami.</span>
                   <span class="checkmark"></span>
                 </label> <br>
-                  <label class="container">
+                <label class="container">
                   <input type="radio" id="overfitting2" name="overfitting" value="overfitting2">
-                  Překročení thresholdu při průchodů neuronovou sítí.  
+                  <span>Překročení thresholdu při průchodů neuronovou sítí.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                 <label class="container">
                   <input type="radio" id="overfitting3" name="overfitting" value="overfitting3">
-                  Natrénování neuronové sítě moc přesně podle daného vzorků dat.  
+                  <span>Natrénování neuronové sítě moc přesně podle daného vzorků dat.</span>
                   <span class="checkmark"></span>
                 </label> <br><br>
 
@@ -524,17 +524,17 @@
                 <strong>Hluboké učení</strong><br><br>
                   <label class="container">
                   <input type="radio" id="deep1" name="deep" value="deep1">
-                  Učení se pomocí zpětné vazby získané z průzkumu okolí.  
+                  <span>Učení se pomocí zpětné vazby získané z průzkumu okolí.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                   <label class="container">
                   <input type="radio" id="deep2" name="deep" value="deep2">
-                  Používání sítě s několika skrytými vrstvami.  
+                  <span>Používání sítě s několika skrytými vrstvami.</span>
                   <span class="checkmark"></span>
                 </label> <br>
                   <label class="container">
                   <input type="radio" id="deep3" name="deep" value="deep3">
-                  Analýza objektů na obrázku pomocí strojového učení.  
+                  <span>Analýza objektů na obrázku pomocí strojového učení.</span>  
                   <span class="checkmark"></span>
                 </label> <br><br>
 
@@ -648,12 +648,14 @@ var properties_array_ML = ["test_data1","test_data2", "test_data3", "classificat
     
     var error = false;
     var counter = 0;
-    for (var i = 0; i < properties_array.length; i++){
+    for (var i = 0; i < properties_array_ML.length; i++){
       var value = document.getElementById(properties_array_ML[i]).checked;
+      document.getElementById(properties_array_ML[i]).className = master_ML[i] ? "ok" : "bad";
       if (value !== master_ML[i]){
         error = true;
         if (value === true){
-        counter++;}
+          counter++;
+        }
         console.log(properties_array_ML[i]);
       }
     }

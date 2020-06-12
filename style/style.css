@@ -1,5 +1,17 @@
+.questions2 input:checked.ok + span::after {
+	color: green;
+	content: "✓";
+}
 
+.questions2 input:checked.bad + span::after {
+	color: red;
+	content: "✕";
+}
 
+.questions2 input + span::after {
+	margin-left: 10px;
+	font-weight: 900;
+}
 
 body {
 	margin: 0;
